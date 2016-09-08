@@ -1,0 +1,119 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #c88180;
+$brand-color:      #2a7ae2;
+$header-color:     #0f3a49;
+$white:            #fff;
+$videoBackground: linear-gradient(#123845,#3d4d59,#9e7276, #c88180);
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "minima";
+
+.home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.stores{
+
+    flex-direction: row;
+    align-items: stretch;
+    flex-grow: 2;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+ a{
+     &.store-link{
+        width: 240px;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+ }
+
+.hidden-xs{
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+
+.hidden-lg{
+    display: none;
+    @include media-query($on-palm) {
+        display: flex;
+    }
+}
+
+.videoContainer{
+    background-image: url('/assets/background.png');
+    background-size: 1px 802px;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+    @include media-query($on-palm) {
+        background-size: 1px 401px;
+        height: 400px;
+    }
+    video{
+        margin: -20px auto auto;
+        @include media-query($on-palm) {
+            width: 240px;
+            height: 410px;
+            margin-top: -10px;
+        }
+    }
+
+}
+
+.logo{
+    display: block;
+    height: 10vh;
+    color: $white;
+    text-align: center;
+    float: left;
+    img{
+        height: 10vh;
+        display: block;
+        margin: auto;
+    }
+}

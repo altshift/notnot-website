@@ -1,0 +1,6 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
+{
+    "jira-code.jira-projects": ["EX"],
+    "jira-code.jira-filter": "status not in (done, rejected)",
+    "files.trimTrailingWhitespace": true
+}
