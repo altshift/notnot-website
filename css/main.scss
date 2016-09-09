@@ -14,7 +14,8 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #c88180;
-$brand-color:      #2a7ae2;
+$brand-color:      #fff;
+$visited-color:      #0f3a49;
 $header-color:     #0f3a49;
 $white:            #fff;
 $videoBackground: linear-gradient(#123845,#3d4d59,#9e7276, #c88180);
@@ -49,7 +50,6 @@ $on-laptop:        800px;
 }
 
 .stores{
-
     flex-direction: row;
     align-items: stretch;
     flex-grow: 2;
@@ -63,6 +63,9 @@ $on-laptop:        800px;
         margin: auto;
         img{
             width: 100%;
+        }
+        @include media-query($on-palm) {
+            margin: auto 10px;
         }
     }
  }
@@ -81,9 +84,11 @@ $on-laptop:        800px;
 }
 
 .videoContainer{
-    background-image: url('/assets/background.png');
-    background-size: 1px 802px;
-    height: 800px;
+    background-image:url('/assets/background.png'), url('/assets/background_plain.png');
+    background-size: 1px 401px, 1px 802px;
+    background-repeat: repeat no-repeat;
+    background-position: center;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     text-align: center;
@@ -91,29 +96,117 @@ $on-laptop:        800px;
     flex-direction: row;
 
     @include media-query($on-palm) {
-        background-size: 1px 401px;
-        height: 400px;
+        height: 440px;
     }
-    video{
-        margin: -20px auto auto;
-        @include media-query($on-palm) {
-            width: 240px;
-            height: 410px;
-            margin-top: -10px;
-        }
-    }
+
 
 }
 
 .logo{
     display: block;
     height: 10vh;
+    width: 10vh;
     color: $white;
     text-align: center;
     float: left;
     img{
         height: 10vh;
         display: block;
+        margin: auto;
+        @include media-query($on-palm) {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    @include media-query($on-palm) {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+#iphone{
+    position: relative;
+    min-width: 260px;
+    height: 524px;
+    margin: auto;
+
+    @include media-query($on-palm) {
+         height: 440px;
+    }
+
+
+    .cover{
+        pointer-events: none;
+        position: absolute;
+        background-image: url("/assets/backiphone_transparent.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 260px;
+        height: 100%;
+        @include media-query($on-palm) {
+            background-size: contain;
+        }
+    }
+
+    video{
+        position: absolute;
+        margin: auto;
+        top: 60px;
+        left: 11px;
+        width: 240px;
+        height: 400px;
+        @include media-query($on-palm) {
+            width: 230px;
+            height: 330px;
+            left: 15px;
+            top: 55px;
+        }
+    }
+}
+
+.description{
+    text-align: justify;
+    border-top: 2px dotted;
+    font-size: 18px;
+    color: $white;
+    padding: $spacing-unit;
+    max-width: 400px;
+    margin:  $spacing-unit auto;
+}
+
+.footer-col-wrapper{
+    color: $header-color;
+    font-size: 16px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-list, .social-media-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    li{
+        width:50%;
+        display: block;
+        text-align: center;
+        font-weight: bolder;
+        img{
+            border: 4px solid #ffffff;
+            border-radius: 3px;
+            max-width: 90%;
+        }
+    }
+}
+
+.recall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 480px;
+    >*{
+        display: block;
+        width:50%;
         margin: auto;
     }
 }

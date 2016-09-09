@@ -95,12 +95,16 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $header-color;
+        svg{
+            path{
+                fill:$header-color;
+            }
+        }
     }
 }
 
@@ -200,8 +204,6 @@ pre {
     clear: both;
 }
 
-
-
 /**
  * Icons
  */
@@ -212,6 +214,6 @@ pre {
     vertical-align: middle;
 
     path {
-        fill: $grey-color;
+        fill: $white;
     }
 }

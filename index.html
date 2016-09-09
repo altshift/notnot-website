@@ -2,14 +2,29 @@
 layout: default
 ---
 
-<div class="home">
+
+<section>
+<div  class="home">
   <div class="videoContainer">
     <a href="#" class="store-link hidden-xs">
       <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
     </a>
-    <video width="480" height="820" autoplay loop>
-      <source src="{{site.baseurl}}/assets/bandicam 2016-09-08 12-02-51-497.mp4">
-    </video>
+    <div id="iphone">
+      <video id="video" width="240" height="410" autoplay loop>
+        <source src="{{site.baseurl}}/assets/bandicam 2016-09-08 12-02-51-497.mp4">
+      </video>
+      <script>
+        var video = document.getElementById('video');
+        video.oncanplay=function(){
+          video.play();
+        }
+        video.addEventListener('click',function(){
+          video.play();
+        },false);
+      </script>
+      <div class="cover">
+      </div>
+    </div>
     <a href="#" class="store-link hidden-xs">
       <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
     </a>
@@ -23,3 +38,53 @@ layout: default
     </a>
   </div>
 </div>
+</section>
+<section>
+<div  class="description">
+  <h1>{{site.title}} - {{site.baseline}}</h1>
+  <p>{{site.description}}</p>
+</div>
+</section>
+<section>
+<div  class="description">
+  <ul class="contact-list">
+    {% for i in (3..4) %}
+      {% assign filename = "/assets/image" | append: i | prepend: site.baseurl %}
+      <li><img src="{{filename}}.png"></li>
+    {% endfor %}
+  </ul>
+  <ul class="contact-list">
+    {% for i in (1..2) %}
+      {% assign filename = "/assets/image" | append: i | prepend: site.baseurl %}
+      <li><img src="{{filename}}.png"></li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+<section>
+<div  class="description">
+  <h2> Developers </h2>
+  <p>
+    <a>Mathias Baglioni</a> <br> <a>Julien Cotret</a> <br> <a>Vincent Noël</a>
+  </p>
+  <h2> Design </h2>
+  <p><a>Mathias Baglioni</a></p>
+</div>
+</section>
+<section>
+<div  class="description">
+  <div class="recall">
+    <img src="{{site.baseurl}}/assets/logo.png"/>
+
+    <div class="site-title site-baseline">
+        {{site.baseline}}
+    </div>
+    <a href="#" class="store-link ">
+      <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
+    </a>
+    <a href="#" class="store-link ">
+      <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+    </a>
+  </div>
+</div>
+</section>

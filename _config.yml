@@ -16,11 +16,13 @@
 title: NotNot
 baseline: The Brain Breaker
 email: contact@notnot.fr
+altshift_email: contact@altshift.fr
 description: > # this means to ignore newlines until "baseurl:"
-  NotNot is the best mobile game ever made
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis lobortis elit. Maecenas faucibus magna sed nisi dapibus, sit amet faucibus neque volutpat. Mauris ac sem a felis volutpat posuere a imperdiet mauris. Sed ipsum quam, viverra ut sagittis eget, tincidunt nec leo. Duis id pretium turpis. Suspendisse sollicitudin quis est eget rutrum. Phasellus nec enim a dolor feugiat semper. Sed varius vulputate vehicula. Fusce eu ante iaculis, condimentum libero sit amet, finibus sem. Maecenas tincidunt sagittis libero, eu bibendum augue vehicula at. Sed faucibus dictum mattis. Mauris at felis ac eros pharetra pretium.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.notnot.fr" # the base hostname & protocol for your site
 twitter_username: notnot_game
+facebook_username: notnot
 github_username:  altshift
 repository: notnot-website/atlshift.github.io
 # Build settings
