@@ -18,12 +18,13 @@ baseline: The Brain Breaker
 email: contact@notnot.fr
 altshift_email: contact@altshift.fr
 description: > # this means to ignore newlines until "baseurl:"
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis lobortis elit. Maecenas faucibus magna sed nisi dapibus, sit amet faucibus neque volutpat. Mauris ac sem a felis volutpat posuere a imperdiet mauris. Sed ipsum quam, viverra ut sagittis eget, tincidunt nec leo. Duis id pretium turpis. Suspendisse sollicitudin quis est eget rutrum. Phasellus nec enim a dolor feugiat semper. Sed varius vulputate vehicula. Fusce eu ante iaculis, condimentum libero sit amet, finibus sem. Maecenas tincidunt sagittis libero, eu bibendum augue vehicula at. Sed faucibus dictum mattis. Mauris at felis ac eros pharetra pretium.
+  Not Not mobile game is the ultimate brain challenge based on logic and orientation. Follow the written instructions to swipe your character towards the correct direction (top, bottom, left or right). Over the levels, more and more complex and various instructions will require both your logic and dexterity to progress.
 baseurl: "/notnot-website" # the subpath of your site, e.g. /blog
 url: "https://altshift.github.io" # the base hostname & protocol for your site
 twitter_username: notnot_game
 facebook_username: notnot
 github_username:  altshift
+entreprise: Altshift
 repository: notnot-website/atlshift.github.io
 # Build settings
 markdown: kramdown

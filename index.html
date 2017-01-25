@@ -1,5 +1,9 @@
 ---
 layout: default
+description: > # this means to ignore newlines until "baseurl:"
+  Not Not mobile game is the ultimate brain challenge based on logic and orientation. Follow the written instructions to swipe your character towards the correct direction (top, bottom, left or right). Over the levels, more and more complex and various instructions will require both your logic and dexterity to progress.
+disclaimer: "Alt Shift is not responsible for any of the following consequences triggered by a not not game session:"
+disclaimer-list: ["Mobile damages due to a drop or any other violent contact with any hard material (wall, floor, ceiling, table, heel, friend’s face, etc.)", "Mobile loss due to an intentional or unintentional throw into uncertain places (opened window from a high building, ocean, garbage dump, hell, friend’s face, etc.)", "Brain tumors", "Social isolation", "Nervous breakdown", "Shame"]
 ---
 
 
@@ -42,8 +46,21 @@ layout: default
 <section>
 <div  class="description">
   <h1>{{site.title}} - {{site.baseline}}</h1>
-  <p>{{site.description}}</p>
+  <p>{{page.description}}</p>
 </div>
+    <div class="alert">
+        <img class="alert-icon" title="warning" src="{{site.baseurl}}/assets/warning.svg#warning">
+        <div class="text">
+            <p>
+                {{page.disclaimer}}
+            </p>
+            <ul>
+                {% for item in page.disclaimer-list %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </section>
 <section>
 <div  class="description">
