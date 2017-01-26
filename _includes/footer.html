@@ -16,12 +16,12 @@
           {% endif %}
           {% if site.facebook_username %}
           <li>
-            {% include icon-facebook.html username=site.facebook_username %}
+            {% include icon-facebook.html username=site.facebook_text id=site.facebook_username %}
           </li>
           {% endif %}
 
         </ul>
-        <a class="logo-altshift" href="www.altshift.fr">
+        <a class="logo-altshift" href="http://www.altshift.fr">
             <img src="{{ '/assets/logo_altshift.png' | prepend: site.baseurl }}" alt="Altshift website"/>
             www.altshift.fr
         </a>

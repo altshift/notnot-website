@@ -22,7 +22,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/notnot-website" # the subpath of your site, e.g. /blog
 url: "https://altshift.github.io" # the base hostname & protocol for your site
 twitter_username: notnot_game
-facebook_username: notnot
+facebook_username: NotNot-1235889506456864
+facebook_text: Not Not
 github_username:  altshift
 entreprise: Altshift
 commingsoon: COMMING SOON
