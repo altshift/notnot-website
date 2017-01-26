@@ -240,6 +240,9 @@ $on-laptop:        800px;
         }
         h2{
             margin: 0px 0px 15px;
+            @include media-query($on-palm) {
+                margin: 0px 0px 15px;
+            }
         }
 
     }
