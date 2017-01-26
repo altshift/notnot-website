@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: NotNot
+title: Not Not
 baseline: The Brain Breaker
 email: contact@notnot.fr
 altshift_email: contact@altshift.fr
@@ -25,6 +25,7 @@ twitter_username: notnot_game
 facebook_username: notnot
 github_username:  altshift
 entreprise: Altshift
+commingsoon: COMMING SOON
 repository: notnot-website/atlshift.github.io
 # Build settings
 markdown: kramdown

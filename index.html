@@ -4,14 +4,17 @@ description: > # this means to ignore newlines until "baseurl:"
   Not Not mobile game is the ultimate brain challenge based on logic and orientation. Follow the written instructions to swipe your character towards the correct direction (top, bottom, left or right). Over the levels, more and more complex and various instructions will require both your logic and dexterity to progress.
 disclaimer: "Alt Shift is not responsible for any of the following consequences triggered by a not not game session:"
 disclaimer-list: ["Mobile damages due to a drop or any other violent contact with any hard material (wall, floor, ceiling, table, heel, friend’s face, etc.)", "Mobile loss due to an intentional or unintentional throw into uncertain places (opened window from a high building, ocean, garbage dump, hell, friend’s face, etc.)", "Brain tumors", "Social isolation", "Nervous breakdown", "Shame"]
+developpers: ["Mathias Baglioni", "Julien Cotret", "Vincent Noël"]
+designers: ["Mathias Baglioni"]
 ---
 
 
 <section>
 <div  class="home">
   <div class="videoContainer">
-    <a href="#" class="store-link hidden-xs">
+    <a href="#newsletter-signup" class="store-link hidden-xs">
       <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
+      {{site.commingsoon}}
     </a>
     <div id="iphone">
       <video id="video" width="240" height="410" autoplay loop>
@@ -29,16 +32,19 @@ disclaimer-list: ["Mobile damages due to a drop or any other violent contact wit
       <div class="cover">
       </div>
     </div>
-    <a href="#" class="store-link hidden-xs">
+    <a href="#newsletter-signup" class="store-link hidden-xs">
       <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+      {{site.commingsoon}}
     </a>
   </div>
   <div class="stores hidden-lg">
-    <a href="#" class="store-link ">
+    <a href="#newsletter-signup" class="store-link ">
       <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
+      {{site.commingsoon}}
     </a>
-    <a href="#" class="store-link">
+    <a href="#newsletter-signup" class="store-link">
       <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+      {{site.commingsoon}}
     </a>
   </div>
 </div>
@@ -78,30 +84,75 @@ disclaimer-list: ["Mobile damages due to a drop or any other violent contact wit
   </ul>
 </div>
 </section>
+{% comment %}
+    <section>
+    <div  class="description">
+        <h2 class="center"> Developers </h2>
+        <ul>
+            {% for item in page.developpers %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        <h2 class="center"> Design </h2>
+        <ul>
+            {% for item in page.designers %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </section>
+{% endcomment %}
 <section>
 <div  class="description">
-  <h2> Developers </h2>
-  <p>
-    <a>Mathias Baglioni</a> <br> <a>Julien Cotret</a> <br> <a>Vincent Noël</a>
-  </p>
-  <h2> Design </h2>
-  <p><a>Mathias Baglioni</a></p>
+    <div class="recall">
+        <img src="{{site.baseurl}}/assets/logo.png"/>
+        <div class="site-title site-baseline">
+            {{site.baseline}}
+        </div>
+        <a href="#newsletter-signup" class="store-link ">
+            {{site.commingsoon}}
+            <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
+        </a>
+        <a href="#newsletter-signup" class="store-link ">
+            {{site.commingsoon}}
+            <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+        </a>
+    </div>
 </div>
 </section>
 <section>
-<div  class="description">
-  <div class="recall">
-    <img src="{{site.baseurl}}/assets/logo.png"/>
+    <div id="newsletter-signup" class="description newsletter">
+    <h2>Subscribe here to be informed about the release and news about Not Not :</h2>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="//alternativeshift.us13.list-manage.com/subscribe/post?u=4f5e55994004ab6cc3f8c6d05&amp;id=b95159358c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
 
-    <div class="site-title site-baseline">
-        {{site.baseline}}
+        <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group input-group">
+            <strong>Terms and Conditions </strong>
+            <ul><li><input type="checkbox" value="1" name="group[10965][1]" id="mce-group[10965]-10965-0"><label for="mce-group[10965]-10965-0">I agree to the Terms and Conditions and accept to receive emails about Not Not and other Alt Shift game</label></li>
+        </ul>
+        </div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f5e55994004ab6cc3f8c6d05_b95159358c" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
     </div>
-    <a href="#" class="store-link ">
-      <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
-    </a>
-    <a href="#" class="store-link ">
-      <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
-    </a>
-  </div>
-</div>
 </section>
