@@ -101,6 +101,7 @@ $on-laptop:        800px;
     background-repeat: repeat no-repeat;
     background-position: center;
     height: 60vh;
+    min-height: 575px;
     width: 100%;
     overflow: hidden;
     text-align: center;
@@ -109,6 +110,7 @@ $on-laptop:        800px;
 
     @include media-query($on-palm) {
         height: 440px;
+        min-height: 440px;
     }
 
 
@@ -323,7 +325,7 @@ $on-laptop:        800px;
     height: 480px;
     >*{
         display: block;
-        max-width: 200px;
+        max-width: 220px;
         margin: auto;
     }
 }

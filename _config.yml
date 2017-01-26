@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Not Not
-baseline: The Brain Breaker
+baseline: A Brain Breaker
 email: contact@notnot.fr
 altshift_email: contact@altshift.fr
 description: > # this means to ignore newlines until "baseurl:"
