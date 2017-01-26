@@ -194,10 +194,6 @@ $on-laptop:        800px;
         padding: 20px;
     }
 
-    &.less-spaced{
-        padding: $spacing-unit/2;
-    }
-
     h1, h2{
         font-family: "BebasNeue";
         font-weight: 400;
@@ -241,6 +237,9 @@ $on-laptop:        800px;
             &:hover{
                 background-color: $button-hover;
             }
+        }
+        h2{
+            margin: 0px 0px 15px;
         }
 
     }
