@@ -50,22 +50,9 @@ designers: ["Mathias Baglioni"]
 </div>
 </section>
 <section>
-<div  class="description">
-  <h1>{{site.title}} - {{site.baseline}}</h1>
-  <p>{{page.description}}</p>
-</div>
-    <div class="alert">
-        <img class="alert-icon" title="warning" src="{{site.baseurl}}/assets/warning.svg#warning">
-        <div class="text">
-            <p>
-                {{page.disclaimer}}
-            </p>
-            <ul>
-                {% for item in page.disclaimer-list %}
-                    <li>{{item}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+    <div  class="description">
+    <h1>{{site.title}} - {{site.baseline}}</h1>
+    <p>{{page.description}}</p>
     </div>
 </section>
 <section>
@@ -84,31 +71,30 @@ designers: ["Mathias Baglioni"]
   </ul>
 </div>
 </section>
-{% comment %}
-    <section>
-    <div  class="description">
-        <h2 class="center"> Developers </h2>
-        <ul>
-            {% for item in page.developpers %}
-                <li>{{item}}</li>
-            {% endfor %}
-        </ul>
-        <h2 class="center"> Design </h2>
-        <ul>
-            {% for item in page.designers %}
-                <li>{{item}}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    </section>
-{% endcomment %}
 <section>
-<div  class="description">
+    <div class="alert">
+        <img class="alert-icon" title="warning" src="{{site.baseurl}}/assets/warning.svg#warning">
+        <div class="text">
+            <p>
+                {{page.disclaimer}}
+            </p>
+            <ul>
+                {% for item in page.disclaimer-list %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+<div  class="description less-spaced">
     <div class="recall">
         <img src="{{site.baseurl}}/assets/logo.png"/>
         <div class="site-title site-baseline">
             {{site.title}}&nbsp;-&nbsp;{{site.baseline}}
         </div>
+        <h1> {{site.commingsoon}} </h1>
+        {% comment %}
         <a href="#newsletter-signup" class="store-link ">
             {{site.commingsoon}}
             <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
@@ -117,6 +103,7 @@ designers: ["Mathias Baglioni"]
             {{site.commingsoon}}
             <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
         </a>
+        {% endcomment %}
     </div>
 </div>
 </section>
