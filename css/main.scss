@@ -48,7 +48,7 @@ $on-laptop:        800px;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 @font-face {
     font-family: "BebasNeue";
-    src:    url('../assets/BebasNeue.otf') format('truetype');
+    src:    url('/assets/BebasNeue.otf') format('truetype');
 }
 
 .home{
@@ -96,7 +96,7 @@ $on-laptop:        800px;
 }
 
 .videoContainer{
-    background-image:url('../assets/background.png'), url('../assets/background_plain.png');
+    background-image:url('/assets/background.png'), url('/assets/background_plain.png');
     background-size: 1px 401px, 1px 802px;
     background-repeat: repeat no-repeat;
     background-position: center;
@@ -154,7 +154,7 @@ $on-laptop:        800px;
     .cover{
         pointer-events: none;
         position: absolute;
-        background-image: url("../assets/backiphone_transparent.png");
+        background-image: url("/assets/backiphone_transparent.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
