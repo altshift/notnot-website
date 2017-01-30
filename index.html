@@ -18,7 +18,7 @@ designers: ["Mathias Baglioni"]
     </a>
     <div id="iphone">
       <video id="video" width="240" height="410" autoplay loop>
-        <source src="{{site.baseurl}}/assets/bandicam 2016-09-08 12-02-51-497.mp4">
+        <source src="{{site.baseurl}}/assets/NotNot_1.mp4">
       </video>
       <script>
         var video = document.getElementById('video');
@@ -58,14 +58,14 @@ designers: ["Mathias Baglioni"]
 <section>
 <div  class="description">
   <ul class="contact-list">
-    {% for i in (3..4) %}
-      {% assign filename = "/assets/image" | append: i | prepend: site.baseurl %}
+    {% for i in (1..2) %}
+      {% assign filename = "/assets/screens/image" | append: i | prepend: site.baseurl %}
       <li><img src="{{filename}}.png"></li>
     {% endfor %}
   </ul>
   <ul class="contact-list">
-    {% for i in (1..2) %}
-      {% assign filename = "/assets/image" | append: i | prepend: site.baseurl %}
+    {% for i in (3..4) %}
+      {% assign filename = "/assets/screens/image" | append: i | prepend: site.baseurl %}
       <li><img src="{{filename}}.png"></li>
     {% endfor %}
   </ul>
