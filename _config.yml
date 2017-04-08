@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Not Not
-share_title_end: Mobile game for iOs and Android
+share_title_end: Mobile game for iOS and Android
 baseline: A Brain-Buster
 email: contact@notnot-game.com
 altshift_email: contact@altshift.fr
