@@ -31,6 +31,8 @@ facebook_text: Not Not
 github_username:  altshift
 entreprise: Altshift
 commingsoon: COMING SOON
+android_url: https://play.google.com/store/apps/details?id=com.altshift.notnot
+ios_url: https://itunes.apple.com/app/id1107589341
 repository: notnot-website/atlshift.github.io
 # Build settings
 markdown: kramdown
