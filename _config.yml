@@ -33,6 +33,7 @@ entreprise: Altshift
 commingsoon: COMING SOON
 android_url: https://play.google.com/store/apps/details?id=com.altshift.notnot
 ios_url: https://itunes.apple.com/app/id1107589341
+switch_url: https://www.nintendo.com/games/detail/not-not-a-brain-buster-switch
 repository: notnot-website/atlshift.github.io
 # Build settings
 markdown: kramdown

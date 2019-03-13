@@ -13,9 +13,7 @@ producer: ["Frédéric Lopez"]
 <section>
 <div  class="home">
   <div class="videoContainer">
-    <a href="{{site.ios_url}}" class="store-link hidden-xs">
-      <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
-    </a>
+
     <div id="iphone">
       <video id="video" width="240" height="410" autoplay loop>
         <source src="{{site.baseurl}}/assets/NotNot_1.mp4">
@@ -32,11 +30,23 @@ producer: ["Frédéric Lopez"]
       <div class="cover">
       </div>
     </div>
-    <a href="{{site.android_url}}" class="store-link hidden-xs">
-      <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
-    </a>
+    <div id="links" class="hidden-xs">
+      <a href="{{site.switch_url}}" class="store-link horizontal hidden-xs">
+          <img id="switch" src="{{site.baseurl}}/assets/switch-badge.png"/>
+          <img id="eshop" src="{{site.baseurl}}/assets/eshop-badge.png"/>
+      </a>
+      <a href="{{site.android_url}}" class="store-link hidden-xs">
+        <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+      </a>
+      <a href="{{site.ios_url}}" class="store-link hidden-xs">
+        <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
+      </a>
+    </div>
   </div>
   <div class="stores hidden-lg">
+    <a href="{{site.switch_url}}" class="store-link">
+        <img src="{{site.baseurl}}/assets/eshop-badge.png"/>
+      </a>
     <a href="{{site.ios_url}}" class="store-link ">
       <img src="{{site.baseurl}}/assets/appstore_135x40.svg"/>
     </a>
@@ -95,6 +105,9 @@ producer: ["Frédéric Lopez"]
         </a>
         <a href="{{site.android_url}}" class="store-link ">
             <img src="{{site.baseurl}}/assets/google-play-badge.png"/>
+        </a>
+        <a href="{{site.switch_url}}" class="store-link">
+          <img src="{{site.baseurl}}/assets/eshop-badge.png"/>
         </a>
     </div>
 </div>
