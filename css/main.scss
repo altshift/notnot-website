@@ -360,7 +360,7 @@ $on-laptop:        800px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 260px;
+    height: 400px;
 
     >*{
         display: block;
@@ -373,6 +373,6 @@ $on-laptop:        800px;
         max-width: 320px;
     }
     img{
-        max-height: 160px;
+        max-height: 120px;
     }
 }
