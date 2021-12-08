@@ -3,12 +3,12 @@ title: Privacy Policy
 permalink: privacy-policy.html
 ---
 
-# Privacy Policy of notnot-game.com
+# Privacy Policy of notnot-game.com, "Not Not - A Brain-Buster" and "Not Not 2 - A Brain Challenge" applications
 This Website collects some Personal Data from its Users.
 
 ## Owner and Data Controller
 Julien Cotret / Alternative Shift SAS
-1 Place Francis Ponge - 34000 MONTPELLIER - FRANCE
+71 place Vauban - 34000 MONTPELLIER - FRANCE
 **Owner contact email:** contact@notnot-game.com
 
 ## Types of Data collected
