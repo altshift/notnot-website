@@ -10,7 +10,7 @@
     <meta name="description" content="{{ site.share_description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="keywords" content="mobile game, puzzle game, brain-buster, brain-busting, brain challenge, brain breaker, logic game, maths game, jeu mobile, iOS, Android, Nintendo Switch, défi mental, défi cérébral, jeu cérébral, entrainement cérébral" />
 
-    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/main.css?v=' | append: site.github.build_revision | prepend: site.baseurl }}">
     <link rel="canonical" href="http://{{site.share_url}}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="http://{{ '/feed.xml' | prepend: site.baseurl | prepend: site.share_url }}">
     <meta property="al:ios:url" content="notnot://" />
