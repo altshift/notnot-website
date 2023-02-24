@@ -39,3 +39,7 @@ repository: notnot-website/atlshift.github.io
 markdown: kramdown
 sass:
     sass_dir: ./css
+
+notnot2:
+  android_url: https://play.google.com/store/apps/details?id=com.altshift.notnot2
+  ios_url: https://apps.apple.com/app/id1575206039

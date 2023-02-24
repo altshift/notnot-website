@@ -2,5 +2,6 @@
 {
     "jira-code.jira-projects": ["EX"],
     "jira-code.jira-filter": "status not in (done, rejected)",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true
 }

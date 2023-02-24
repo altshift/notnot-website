@@ -1,38 +1,39 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 // Our variables
 $base-font-family: "Open Sans", "Helvetica Neue", sans-serif, Helvetica, Arial;
-$base-font-size:   16px;
+$base-font-size: 16px;
 $base-font-weight: 300;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #c88180;
-$brand-color:      #fff;
-$visited-color:      #0f3a49;
-$button-color:      #0f3a49;
-$alert-text:      #0f3a49;
-$alert-background:      #539db7;
-$button-hover:      #17586f;
-$header-color:     #0f3a49;
-$white:            #fff;
-$videoBackground: linear-gradient(#123845,#3d4d59,#9e7276, #c88180);
+$brand-color: #fff;
+$visited-color: #0f3a49;
+$button-color: #0f3a49;
+$alert-text: #0f3a49;
+$alert-background: #539db7;
+$button-hover: #17586f;
+$header-color: #0f3a49;
+$white: #fff;
+$videoBackground: linear-gradient(#123845, #3d4d59, #9e7276, #c88180);
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width: 800px;
 
-$on-palm:          768px;
-$on-laptop:        800px;
+$on-palm: 768px;
+$on-laptop: 800px;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
@@ -45,334 +46,428 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400");
 @font-face {
-    font-family: "BebasNeue";
-    src:    url('/assets/BebasNeue.otf') format('truetype');
+  font-family: "BebasNeue";
+  src: url("/assets/BebasNeue.otf") format("truetype");
 }
 
-.home{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
+.home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.stores{
-    flex-direction: row;
-    align-items: stretch;
-    flex-grow: 2;
-    justify-content: space-around;
-    padding: 10px;
+.stores {
+  flex-direction: row;
+  align-items: stretch;
+  flex-grow: 2;
+  justify-content: space-around;
+  padding: 10px;
 }
 
- a{
-     &.store-link{
-        display: inline-block;
-        width: 300px;
-        margin: 10px auto;
-        text-align: center;
-        img{
-            width: 100%;
-            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-            border-radius: 8px;
-        }
-        @include media-query($on-palm) {
-            margin: auto 10px;
-            height: auto;
-        }
-        &.horizontal{
-            display: flex;
-            width: 300px;
-            img{
-                height: 100%;
-                max-height: 90px;
-                &#switch{
-                    width:90px;
-                    height: 90px;
-                }
-                &#eshop{
-                    width: 100%;
-                    margin-left: 10px;
-                }
-                box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-                border-radius: 8px;
-            }
-        }
-    }
- }
-
- #links{
+a {
+  &.store-link {
+    display: inline-block;
     width: 300px;
-    margin: auto;
-    margin-left:10vw;
- }
-
-.hidden-xs{
-    @include media-query($on-palm) {
-        display: none;
-    }
-}
-
-.hidden-lg{
-    display: none;
-    @include media-query($on-palm) {
-        display: flex;
-    }
-}
-
-.videoContainer{
-    background-image:url('/assets/background.png'), url('/assets/background_plain.png');
-    background-size: 1px 401px, 1px 802px;
-    background-repeat: repeat no-repeat;
-    background-position: center;
-    height: 60vh;
-    min-height: 575px;
-    width: 100%;
-    overflow: hidden;
+    margin: 10px auto;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-
-    @include media-query($on-palm) {
-        height: 440px;
-        min-height: 440px;
-    }
-
-
-}
-
-.logo{
-    display: block;
-    height: 10vh;
-    width: 10vh;
-    color: $white;
-    text-align: center;
-    float: left;
-    img{
-        height: 10vh;
-        display: block;
-        margin: auto;
-        @include media-query($on-palm) {
-            height: 60px;
-            width: 60px;
-        }
+    img {
+      width: 100%;
+      box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
     }
     @include media-query($on-palm) {
-        height: 60px;
-        width: 60px;
+      margin: auto 10px;
+      height: auto;
     }
-}
-
-#iphone{
-    position: relative;
-    min-width: 260px;
-    height: 524px;
-    min-height: 524px;
-    margin: auto;
-    margin-right: 10vw;
-
-    @include media-query($on-palm) {
-        height: 420px;
-        min-height: 420px;
-        margin: auto;
-        margin-right: auto;
-    }
-
-
-    .cover{
-        pointer-events: none;
-        position: absolute;
-        background-image: url("/assets/backiphone_transparent.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 255px;
-        left: 3px;
+    &.horizontal {
+      display: flex;
+      width: 300px;
+      img {
         height: 100%;
-        @include media-query($on-palm) {
-            background-size: contain;
+        max-height: 90px;
+        &#switch {
+          width: 90px;
+          height: 90px;
         }
-    }
-
-    video{
-        position: absolute;
-        margin: auto;
-        top: 60px;
-        left: 11px;
-        width: 240px;
-        height: 400px;
-
-        @include media-query($on-palm) {
-            width: 230px;
-            height: 330px;
-            left: 15px;
-            top: 46px;
+        &#eshop {
+          width: 100%;
+          margin-left: 10px;
         }
-    }
-}
-
-.description{
-    text-align: justify;
-    //border-top: 2px dotted;
-    font-size: 1em;
-    color: $white;
-    padding: $spacing-unit;
-    max-width: 50vw;
-    margin:  $spacing-unit auto;
-
-    @include media-query($on-palm) {
-        max-width: 100vw;
-        padding: 20px;
-    }
-
-    h1, h2{
-        font-family: "BebasNeue";
-        font-weight: 400;
-        font-size: 1.5em;
-
-        &.center{
-            text-align: center;
-        }
-    }
-
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: square;
-        li{
-            margin: 1em;
-            // @include media-query($on-palm) {
-            //     margin: 0;
-            // }
-        }
-    }
-
-
-}
-.newsletter{
-    max-width: 25vw;
-
-    @include media-query($on-palm) {
-        max-width: 100vw;
-    }
-
-    #mc_embed_signup{
-        color: $button-color;
-        border-radius: 3px;
         box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-
-        .button{
-            background-color: $button-color;
-
-            &:hover{
-                background-color: $button-hover;
-            }
-        }
-        h2{
-            margin: 0px 0px 15px;
-            @include media-query($on-palm) {
-                margin: 0px 0px 15px;
-            }
-        }
-
+        border-radius: 8px;
+      }
     }
+  }
 }
 
-.alert{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $alert-background;
-    color: $alert-text;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.250);
-    padding: 1.5em;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 0.8em;
-    max-width: 50vw;
-    margin: auto;
+#links {
+  width: 300px;
+  margin: auto;
+  margin-left: 10vw;
+}
 
+.hidden-xs {
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  display: none;
+  @include media-query($on-palm) {
+    display: flex;
+  }
+}
+
+.videoContainer {
+  background-image: url("/assets/background.png"),
+    url("/assets/background_plain.png");
+  background-size: 1px 401px, 1px 802px;
+  background-repeat: repeat no-repeat;
+  background-position: center;
+  height: 60vh;
+  min-height: 575px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  @include media-query($on-palm) {
+    height: 440px;
+    min-height: 440px;
+  }
+}
+
+.logo {
+  display: block;
+  height: 10vh;
+  width: 10vh;
+  color: $white;
+  text-align: center;
+  float: left;
+  img {
+    height: 10vh;
+    display: block;
+    margin: auto;
     @include media-query($on-palm) {
-        flex-direction: column;
-        max-width: 100vw;
-        border-radius: 0px;
+      height: 60px;
+      width: 60px;
     }
-
-    .alert-icon{
-        align-self: center;
-        height: 128px;
-        fill: #825c06;
-        filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.5));
-        margin-right: 32px;
-        @include media-query($on-palm) {
-            margin-right: 0px;
-            margin-bottom: 32px;
-        }
-    }
+  }
+  @include media-query($on-palm) {
+    height: 60px;
+    width: 60px;
+  }
 }
 
-.footer-col-wrapper{
-    color: $header-color;
-    font-size: 16px;
-    max-width: 400px;
+#iphone {
+  position: relative;
+  min-width: 260px;
+  height: 524px;
+  min-height: 524px;
+  margin: auto;
+  margin-right: 10vw;
+
+  @include media-query($on-palm) {
+    height: 420px;
+    min-height: 420px;
     margin: auto;
-}
+    margin-right: auto;
+  }
 
-.description ul.contact-list, .social-media-list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    li{
-        //width:50%;
-        display: block;
-        text-align: center;
-        font-weight: bolder;
-        img{
-            //border: 4px solid #ffffff;
-            border-radius: 3px;
-            //max-width: 90%;
-            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-        }
+  .cover {
+    pointer-events: none;
+    position: absolute;
+    background-image: url("/assets/backiphone_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 255px;
+    left: 3px;
+    height: 100%;
+    @include media-query($on-palm) {
+      background-size: contain;
     }
-}
+  }
 
-.social-media-list, .contact-list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contact-list{
-    font-family: "BebasNeue";
-    font-size: 1.5em;
-    text-decoration: underline;
-    font-weight: 400;
-    justify-content: space-around;
-}
-
-.recall{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  video {
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    left: 11px;
+    width: 240px;
     height: 400px;
 
-    >*{
-        display: block;
-        max-width: 220px;
-        margin: auto;
-        line-height: 1;
+    @include media-query($on-palm) {
+      width: 230px;
+      height: 330px;
+      left: 15px;
+      top: 46px;
     }
-    h1{
-        font-size: 3em;
-        max-width: 320px;
+  }
+}
+
+.description {
+  text-align: justify;
+  //border-top: 2px dotted;
+  font-size: 1em;
+  color: $white;
+  padding: $spacing-unit;
+  max-width: 50vw;
+  margin: $spacing-unit auto;
+
+  @include media-query($on-palm) {
+    max-width: 100vw;
+    padding: 20px;
+  }
+
+  h1,
+  h2 {
+    font-family: "BebasNeue";
+    font-weight: 400;
+    font-size: 1.5em;
+
+    &.center {
+      text-align: center;
     }
-    img{
-        max-height: 120px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: square;
+    li {
+      margin: 1em;
+      // @include media-query($on-palm) {
+      //     margin: 0;
+      // }
     }
+  }
+}
+.newsletter {
+  max-width: 25vw;
+
+  @include media-query($on-palm) {
+    max-width: 100vw;
+  }
+
+  #mc_embed_signup {
+    color: $button-color;
+    border-radius: 3px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+
+    .button {
+      background-color: $button-color;
+
+      &:hover {
+        background-color: $button-hover;
+      }
+    }
+    h2 {
+      margin: 0px 0px 15px;
+      @include media-query($on-palm) {
+        margin: 0px 0px 15px;
+      }
+    }
+  }
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $alert-background;
+  color: $alert-text;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  padding: 1.5em;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.8em;
+  max-width: 50vw;
+  margin: auto;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    max-width: 100vw;
+    border-radius: 0px;
+  }
+
+  .alert-icon {
+    align-self: center;
+    height: 128px;
+    fill: #825c06;
+    filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.5));
+    margin-right: 32px;
+    @include media-query($on-palm) {
+      margin-right: 0px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.footer-col-wrapper {
+  color: $header-color;
+  font-size: 16px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.description ul.contact-list,
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  li {
+    //width:50%;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    img {
+      //border: 4px solid #ffffff;
+      border-radius: 3px;
+      //max-width: 90%;
+      box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.social-media-list,
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-list {
+  font-family: "BebasNeue";
+  font-size: 1.5em;
+  text-decoration: underline;
+  font-weight: 400;
+  justify-content: space-around;
+}
+
+.recall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+
+  > * {
+    display: block;
+    max-width: 220px;
+    margin: auto;
+    line-height: 1;
+  }
+  h1 {
+    font-size: 3em;
+    max-width: 320px;
+  }
+  img {
+    max-height: 120px;
+  }
+}
+
+#notnot2-banner {
+  position: relative;
+  height: 120px;
+
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: "BebasNeue";
+
+  @include media-query($on-palm) {
+    height: 100px;
+  }
+
+  .container {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    height: 100%;
+
+    @include media-query($on-palm) {
+      width: 100%;
+    }
+
+    .new-banner {
+      background-color: #ff8000;
+      text-align: center;
+
+      font-size: 3em;
+
+      position: absolute;
+      rotate: -45deg;
+      top: 25px;
+      left: -75px;
+      width: 275px;
+      float: left;
+
+      @include media-query($on-palm) {
+        font-size: 1em;
+
+        top: 10px;
+        left: -40px;
+        width: 125px;
+      }
+    }
+
+    .title-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 38px;
+
+      text-align: center;
+      white-space: nowrap;
+      line-height: 1em;
+
+      font-size: 1.5em;
+
+      @include media-query($on-palm) {
+        width: initial;
+        top: 10px;
+      }
+    }
+
+    .badges-container {
+      position: absolute;
+      right: 0px;
+      top: 15px;
+
+      width: 135px;
+
+      img {
+        margin: 3px;
+      }
+
+      @include media-query($on-palm) {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        top: initial;
+
+        text-align: center;
+
+        width: initial;
+
+        img {
+          width: 100px;
+          height: 30px;
+        }
+      }
+    }
+  }
 }
